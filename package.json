@@ -1,0 +1,12 @@
+{
+  "name": "moard",
+  "version": "1.0.0",
+  "dependencies": {
+    "browserify": "^16.5.1",
+    "tsify": "^5.0.0",
+    "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "build": "browserify app.ts -p [ tsify --noImplicitAny ] --s app > dist/bundle.js"
+  }
+}
