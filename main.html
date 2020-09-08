@@ -1,3 +1,25 @@
-<canvas id="main" width="1000pt" height="1000pt"></canvas>
+<canvas id="main" width="500pt" height="500pt"></canvas>
+
+<div>
+    <input type="range" id="scale" name="scale" min="0.2" max="4" value="1" step="0.1">
+    <label for="scale">Scale</label>
+</div>
+<div>
+    <input type="range" id="ox" name="ox" min="-200" max="200" value="0" step="1">
+    <label for="ox">Origin X</label>
+</div>
+<div>
+    <input type="range" id="oy" name="oy" min="-200" max="200" value="0" step="1">
+    <label for="oy">Origin Y</label>
+</div>
+<div>
+    <label for="mode">Mode</label>
+
+    <select name="mode" id="mode" value="draw">
+        <option value="draw">Draw</option>
+        <option value="scroll">Scroll</option>
+    </select>
+</div>
+
 
 <script src="dist/bundle.js"></script>
